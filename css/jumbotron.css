@@ -1,4 +1,48 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
+  padding-top: 5.5rem;
+  font-size: 1.2rem;
+}
+
+#frontpage {
   padding-top: 3.5rem;
-} 
+}
+
+.img-vignette {
+    width: 30%;
+    float: right;
+    margin-left: 0.5em;
+}
+
+.img-illustration {
+    width: 50%;
+    float: left;
+    margin-right: 0.5em;
+}
+
+.img-illustration p {
+    color: #888;
+    font-size: 90%;
+}
+
+@media screen and (max-width : 740px) {
+  .img-vignette {
+      width: 50%;
+  }
+  .img-illustration {
+      width: 100%;
+      margin-left: 0;
+  }
+}
+
+@media screen and (max-width : 576px) {
+  .img-vignette {
+      width: 100%;
+      margin-left: 0;
+  }
+}
+
+
+h2 {
+    clear: both;
+}
