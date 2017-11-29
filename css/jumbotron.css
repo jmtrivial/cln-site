@@ -34,3 +34,7 @@ body {
 h2, h3 {
     clear: both;
 }
+
+hr {
+    clear: both;
+}
