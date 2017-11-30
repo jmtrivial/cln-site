@@ -1,7 +1,7 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
   padding-top: 5.5rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 #frontpage {
