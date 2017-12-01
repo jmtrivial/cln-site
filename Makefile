@@ -15,4 +15,4 @@ $(ARCHIVE): $(PDF_FILES)
 	zip $@ $(PDF_FILES)
 	
 clean:
-	rm -rf $(ARCHIVE) $(PDF_FILES)
+	rm -rf $(ARCHIVE) pdf/*.pdf
