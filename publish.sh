@@ -3,4 +3,4 @@
 git push
 ssh jmtrivial.info "cd cln; git pull"
 make
-./upload.sh
+rsync -rav pdf/ jmtrivial.info:~/cln/pdf/
