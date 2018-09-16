@@ -55,3 +55,11 @@ hr {
     font-style: italic;
     text-align: right;
 }
+
+figure {
+    padding: 0 !important;
+}
+
+figure p.legende {
+    font-size: 80%;
+}
