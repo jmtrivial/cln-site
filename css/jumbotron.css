@@ -63,3 +63,31 @@ figure {
 figure p.legende {
     font-size: 80%;
 }
+
+.img-thumbnail-small {
+    width: 20%;
+    float: left;
+    margin-right: 1em;
+    border-radius: .25rem!important;
+}
+
+.preview-page {
+    margin-top: 2em;
+    clear: both;
+}
+
+
+.btn-right {
+    float: right;
+}
+.preview-page .btn {
+    float: right;
+    font-size: 80%;
+    margin-top: -1em;
+}
+.preview-page h3 {
+  display: inline; 
+}
+.preview-page h3 a {
+    color: black;
+}
