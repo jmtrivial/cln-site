@@ -88,6 +88,6 @@ figure p.legende {
 .preview-page h3 {
   display: inline; 
 }
-.preview-page h3 a {
+.preview-page h3 a, .preview-page h4 a {
     color: black;
 }
