@@ -1,0 +1,35 @@
+{
+  "content": [
+  { "type" : "page",  "txt": "CLN", "title": "Accueil", "url": "index.html", "index": "true" },
+  { "type" : "page", "txt": "La maladie", "title": "Quelques mots sur la maladie", "url": "la-maladie.html" },
+  { "type": "directory", "txt": "Informations médicales",
+             "content": [
+             { "type" : "page", "txt": "Biologie, génétique : les mécanismes", "title": "Comment la maladie s'exprime dans les cellules", "url": "les-mecanismes.html" },
+             { "type" : "page", "txt": "Les symptômes", "title": "Les effets sur le quotidien des patients", "url": "les-symptomes.html" },
+             { "type" : "page", "txt": "Les traitements existants", "title": "Les traitements existants", "url": "les-traitements.html" } 
+             ] },
+  { "type": "directory", "txt": "Au quotidien",
+             "content": [
+             { "type" : "page", "txt": "Activités quotidiennes", "title": "Activités quotidiennes", "url": "activites-quotidiennes.html" },
+             { "type" : "page", "txt": "Communication non verbale", "title": "Communication non verbale", "url": "communication-non-verbale.html" },
+             { "type" : "page", "txt": "Aides à la communication", "title": "Aides à la communication", "url": "aides-a-la-communication.html" },
+             { "type": "separator" },
+             { "type" : "page", "txt": "Les associations et soutiens", "title": "Les soutiens aux patients atteints de CLN", "url": "les-soutiens.html" },
+             { "type": "separator" },
+             { "type" : "page", "txt": "Week-end des familles VML 2018", "title": "Week-end des familles VML 2018", "url": "week-end-familles-vml-2018.html" },
+             { "type" : "page", "txt": "BDFA Family Conference 2017", "title": "BDFA Family Conference 2017", "url": "bdfa-family-conference-2017.html" },
+             { "type" : "page", "txt": "Week-end des familles VML 2017", "title": "Week-end des familles VML 2017", "url": "week-end-familles-vml-2017.html" },             
+             { "type" : "page", "txt": "BDFA Family Conference 2016", "title": "BDFA Family Conference 2016", "url": "bdfa-family-conference-2016.html" }             
+             ] },
+  { "type": "directory", "txt": "La recherche",
+             "content": [
+             { "type" : "page", "txt": "La recherche", "title": "La recherche sur la maladie de Batten (CLN)", "url": "la-recherche.html" },
+             { "type": "separator" },
+             { "type" : "page", "txt": "NCL 2018, London", "title": "NCL 2018, London", "url": "ncl-2018.html" },
+             { "type" : "page", "txt": "NCL 2018, London (détails)", "title": "NCL 2018, London (détails)", "url": "ncl-2018-details.html" }
+             ] },
+  { "type" : "page", "txt": "À propos", "title": "À propos", "url": "a-propos.html", "align" : "right" } 
+  ]
+
+  
+}

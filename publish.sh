@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git push
-ssh jmtrivial.info "cd cln; git pull"
-make
-rsync -rav pdf/ jmtrivial.info:~/cln/pdf/
+make && echo rsync -rav build/*.html jmtrivial.info:~/cln/ && { 
+for i in css doc documents images js pdf; do
+  echo rsync -rav $i/ jmtrivial.info:~/cln/$i/ 
+done }
