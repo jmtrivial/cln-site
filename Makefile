@@ -18,6 +18,9 @@ build/%.html: %.html structure.json
 	./make-page.py $^ build/$< 
 	
 pdf/%.pdf: build/%.html
+	if [ ! -e build/js/ ]; then ln -s js build/; fi
+	if [ ! -e build/images/ ]; then ln -s images build/; fi
+	if [ ! -e build/css/ ]; then ln -s css build/; fi
 	wkhtmltopdf $< $@
 
 $(ARCHIVE): $(PDF_FILES) $(DOC_FILES)
