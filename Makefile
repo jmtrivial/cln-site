@@ -15,12 +15,13 @@ html: $(HTM_FILES)
 pdf: $(PDF_FILES)
 
 build/%.html: %.html structure.json
+	if [ ! -d build ]; then mkdir build; fi
 	./make-page.py $^ build/$< 
 	
 pdf/%.pdf: build/%.html
-	if [ ! -L build/js ]; then ln -s js build/; fi
-	if [ ! -L build/images ]; then ln -s images build/; fi
-	if [ ! -L build/css ]; then ln -s css build/; fi
+	if [ ! -L build/js ]; then ln -s ../js build/; fi
+	if [ ! -L build/images ]; then ln -s ../images build/; fi
+	if [ ! -L build/css ]; then ln -s ../css build/; fi
 	wkhtmltopdf $< $@
 
 $(ARCHIVE): $(PDF_FILES) $(DOC_FILES)
