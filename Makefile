@@ -17,7 +17,7 @@ pdf: $(PDF_FILES)
 build/%.html: %.html structure.json
 	./make-page.py $^ build/$< 
 	
-pdf/%.pdf: %.html
+pdf/%.pdf: build/%.html
 	wkhtmltopdf $< $@
 
 $(ARCHIVE): $(PDF_FILES) $(DOC_FILES)
