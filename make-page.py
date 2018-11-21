@@ -13,10 +13,22 @@ def isInside(menu, htmlfile):
       if entry[u"url"] == htmlfile:
         return True
     elif entry[u"type"] == u"directory":
-      if fullLink(entry, htmlfile):
+      if isInside(entry, htmlfile):
         return True
   
   return False
+
+def getTitle(menu, htmlfile):
+  for entry in menu["content"]:
+    if entry[u"type"] == u"page":
+      if entry[u"url"] == htmlfile:
+        return entry[u"txt"]
+    elif entry[u"type"] == u"directory":
+      result = getTitle(entry, htmlfile)
+      if not result is None:
+        return result
+  
+  return None
 
 def buildMainLink(menu, htmlfile):
   for entry in menu[u"content"]:
@@ -118,6 +130,10 @@ page = pagefile.read()
 
 page = page.replace("<cln-menu />", buildMenu(menu, sys.argv[1]))
 page = page.replace("<cln-footer />", buildFooter(menu, sys.argv[1]))
+title = getTitle(menu, sys.argv[1])
+if title is None:
+  title = "information"
+page = page.replace("<cln-title />", title)
 
 outpage = io.open(sys.argv[3], "w", encoding="utf-8")
 outpage.write(page)
