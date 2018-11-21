@@ -95,3 +95,8 @@ figure p.legende {
 .jumbotron .end {
     clear: both;
 }
+
+.btn-next {
+    margin-top: 0.2em !important;
+    clear: both;
+}
