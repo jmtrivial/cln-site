@@ -13,6 +13,7 @@
              { "type" : "page", "txt": "Activités quotidiennes", "title": "Activités quotidiennes", "url": "activites-quotidiennes.html" },
              { "type" : "page", "txt": "Communication non verbale", "title": "Communication non verbale", "url": "communication-non-verbale.html" },
              { "type" : "page", "txt": "Aides à la communication", "title": "Aides à la communication", "url": "aides-a-la-communication.html" },
+             { "type" : "page", "txt": "Pictogrammes tactiles", "title": "Pictogrammes tactiles", "url": "pictogrammes-tactiles.html" },
              { "type": "separator" },
              { "type" : "page", "txt": "Les associations et soutiens", "title": "Les soutiens aux patients atteints de CLN", "url": "les-soutiens.html" },
              { "type": "separator" },
