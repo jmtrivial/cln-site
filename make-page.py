@@ -112,10 +112,10 @@ def buildFooter(menu, htmlfile):
   mois = ["janvier", u"février", "mars", "avril", "mai", "juin", "juillet", u"août", "septembre", "octobre", "novembre", u"décembre"]
   datemodif = str(datetime[2]) + " " + mois[datetime[1]-1] + " " + str(datetime[0])
   if fullLink(menu, htmlfile):
-    return u'<footer class="container"><p>&copy; Jean-Marie Favreau, <a href="http://vml-asso.org">VML</a> — dernière modification ' + datemodif + u'. Vous pouvez télécharger l\'ensemble des pages de ce site <a href="pdf/archive-cln.zip">au format pdf, compressées en zip</a>.</p></footer>'
+    return u'<footer class="container"><p>&copy; Jean-Marie Favreau, <a href="http://vml-asso.org">VML</a>, <a href="https://metab.ern-net.eu/">MetabERN</a> — dernière modification ' + datemodif + u'. Vous pouvez télécharger l\'ensemble des pages de ce site <a href="pdf/archive-cln.zip">au format pdf, compressées en zip</a>.</p></footer>'
   else:
     pdffile = htmlfile.replace(".html", ".pdf")
-    return u'<footer class="container"><p>&copy; Jean-Marie Favreau, <a href="http://vml-asso.org">VML</a> — dernière modification ' + datemodif + u'. Vous pouvez télécharger cette page <a href="pdf/' + pdffile + u'">au format pdf</a>.</p></footer>'
+    return u'<footer class="container"><p>&copy; Jean-Marie Favreau, <a href="http://vml-asso.org">VML</a>, <a href="https://metab.ern-net.eu/">MetabERN</a> — dernière modification ' + datemodif + u'. Vous pouvez télécharger cette page <a href="pdf/' + pdffile + u'">au format pdf</a>.</p></footer>'
 
 if len(sys.argv) != 4:
   print "Erreur de paramètres"
