@@ -28,4 +28,4 @@ $(ARCHIVE): $(PDF_FILES) $(DOC_FILES)
 	zip $@ $(PDF_FILES) $(DOC_FILES)
 	
 clean:
-	rm -rf $(ARCHIVE) pdf/*.pdf
+	rm -rf $(ARCHIVE) pdf/*.pdf $(HTM_FILES)
