@@ -18,6 +18,7 @@
              { "type": "separator" },
              { "type" : "page", "txt": "Les associations et soutiens", "title": "Les soutiens aux patients atteints de CLN", "url": "les-soutiens.html" },
              { "type" : "page", "txt": "Références et liens", "title": "Références et liens de lectures", "url": "references.html" },
+             { "type" : "page", "txt": "Livre JNCL (2018)", "title": "Livre JNCL (2018)", "url": "livre-jncl-2018.html" },
              { "type": "separator" },
              { "type" : "page", "txt": "Week-end des familles VML 2019", "title": "Week-end des familles VML 2019", "url": "week-end-familles-vml-2019.html" },
              { "type" : "page", "txt": "Week-end des familles VML 2018", "title": "Week-end des familles VML 2018", "url": "week-end-familles-vml-2018.html" },
