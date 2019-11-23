@@ -29,7 +29,12 @@
   { "type": "directory", "txt": "La recherche",
              "content": [
              { "type" : "page", "txt": "La recherche, comment ça marche", "title": "La recherche sur la maladie de Batten (CLN)", "url": "la-recherche.html" },
-             { "type" : "page", "txt": "Actualités de la recherche", "title": "Les actualités de la recherche", "url": "actualites-recherche.html" },
+             { "type" : "page", "txt": "Les traitements envisagés", "title": "Les traitements envisagés", "url": "traitements-envisages.html" },
+             { "type": "separator" },
+             { "type" : "page", "txt": "Actualités des essais cliniques", "title": "Les actualités des essais cliniques", "url": "essais-cliniques.html" },
+             { "type": "separator" },
+             { "type" : "page", "txt": "La recherche pré-clinique", "title": "La recherche pré-clinique", "url": "recherche-preclinique.html" },
+             { "type" : "page", "txt": "Actualités de la recherche pré-clinique", "title": "Les actualités de la recherche pré-clinique", "url": "actualites-recherche.html" },
              { "type": "separator" },
              { "type" : "page", "txt": "Troubles du comportement", "title": "Troubles du comportement avant le diagnostic CLN", "url": "trouble-comportement.html" },
              { "type": "separator" },

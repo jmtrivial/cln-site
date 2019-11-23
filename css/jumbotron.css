@@ -2,10 +2,15 @@
 body {
   padding-top: 5.5rem;
   font-size: 1.1rem;
+  text-align: justify;
 }
 
 #frontpage {
   padding-top: 3.5rem;
+}
+
+main {
+    border-bottom: 1px solid #ddd;
 }
 
 .img-vignette {
@@ -100,3 +105,186 @@ figure p.legende {
     margin-top: 0.2em !important;
     clear: both;
 }
+
+/** la barre dédiée recherche */
+.pages-recherche {
+        width: 100%;
+        border-radius: .3em;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        padding: .2em;
+        margin-bottom: 1em;
+}
+.pages-recherche a {
+        color: #222;
+        display: block;
+        width: 100%;
+}
+.pages-recherche a:hover {
+        color: #000;
+        text-decoration: none;
+}
+.pages-recherche ul, .pages-recherche li {
+        display: block;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+}
+.pages-recherche .entete li {
+        text-align: center;    
+}
+
+.pages-recherche .entete {
+        background: #ffe8d8;
+        margin-bottom: 0.4em;
+}
+.pages-recherche .entete .titre-recherche {
+        background: #ffc09b;
+}
+
+.pages-recherche .entete a {
+    padding: 0.2em 0.5em;
+}
+
+.pages-recherche .entete a:hover {
+        background: #ffdbbb;
+        color: #000;
+}
+
+.pages-recherche .entete .titre-recherche a:hover {
+        background: #ff9a6b;
+        color: #fff;
+}
+
+.pages-recherche .entete, 
+.pages-recherche .entete li {
+        width: 100%;
+}
+
+.pages-recherche .bloc-recherche {
+        width: 28%;
+        float: left;
+        background: #f3fff2;
+        min-height: 5em;
+        text-align: center;
+}
+.pages-recherche .bloc-recherche a:hover {
+        background: #d6ffd3;
+}
+.pages-recherche .bloc-recherche>a {
+    height: 10em;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    width: 100%;
+}
+.pages-recherche .bloc-recherche li {
+        display: table;
+        width: 100%;
+}
+.pages-recherche .bloc-recherche {
+        display: table;
+}
+
+.pages-recherche .bloc-recherche li a {
+    height: 5em;
+    position: relative;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    width: 100%;
+}
+
+
+
+.pages-recherche .bloc-recherche>a,
+.pages-recherche .bloc-recherche .titre-recherche a {
+    background: #a8f092;
+}
+.pages-recherche .bloc-recherche>a:hover,
+.pages-recherche .bloc-recherche .titre-recherche a:hover {
+    background: #68cb43;
+    color: #fff;
+}
+
+.pages-recherche .suite-recherche .vertical {
+            display: none;
+}
+
+.pages-recherche .suite-recherche {
+        width: 8%;
+        float: left;
+        text-align: center;
+        font-size: 150%;
+        padding-top: 2.5em;
+}
+
+.entete-recherche .pages-recherche {
+        width: 50%;
+        float: left;
+        font-size: 80%;
+}
+.entete-recherche .description-recherche {
+        width: 50%;
+        float: left;
+        padding: 2em 0.8em;
+        font-style: italic;
+        
+}
+
+.entete-recherche .pages-recherche a {
+        opacity: .5;
+}
+.entete-recherche .pages-recherche a:hover {
+        opacity: 1.0;
+}
+.entete-recherche .pages-recherche .active a {
+        font-weight: bold;
+        background-color: #68cb43;
+        color: #fff;
+        opacity: 1.0;
+}
+
+.entete-recherche .pages-recherche .entete .active {
+        font-weight: bold;
+        background: #ff9a6b;
+        color: #fff;
+        opacity: 1.0;
+}
+
+
+@media screen and (max-width : 1200px) {
+  .pages-recherche .corps {
+        font-size: 80%;
+  }
+}
+@media screen and (max-width : 800px) {
+    .pages-recherche .bloc-recherche, 
+    .pages-recherche .suite-recherche {
+        width: 100%;
+    }
+    .pages-recherche .suite-recherche .horizontal {
+            display: none;
+    }
+    .pages-recherche .suite-recherche .vertical {
+            display: block;
+    }
+    .pages-recherche .suite-recherche {
+            height: 1.5em;
+            padding: 0;
+            
+    }
+
+}
+
+@media screen and (max-width : 1024px) {
+    .entete-recherche .pages-recherche {
+        width: 100%;
+    }
+    .entete-recherche .description-recherche {
+        width: 100%;
+    }
+
+}
+
+
