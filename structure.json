@@ -26,7 +26,11 @@
              { "type" : "page", "txt": "Week-end des familles VML 2017", "title": "Week-end des familles VML 2017", "url": "week-end-familles-vml-2017.html" },             
              { "type" : "page", "txt": "BDFA Family Conference 2016", "title": "BDFA Family Conference 2016", "url": "bdfa-family-conference-2016.html" }             
              ] },
-  { "type": "directory", "txt": "La recherche",
+  { "type": "directory", "txt": "Témoignages",
+             "content": [
+             { "type" : "page", "txt": "Perte de la parole", "title": "Perte de la parole", "url": "perte-parole.html" }
+               ] },
+             { "type": "directory", "txt": "La recherche",
              "content": [
              { "type" : "page", "txt": "La recherche, comment ça marche", "title": "La recherche sur la maladie de Batten (CLN)", "url": "la-recherche.html" },
              { "type" : "page", "txt": "Les traitements envisagés", "title": "Les traitements envisagés", "url": "traitements-envisages.html" },
