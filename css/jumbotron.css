@@ -290,6 +290,8 @@ figure p.legende {
 footer {
         clear: both;
         margin-top: 2em;    
+        font-size: 80%;
+        color: #888;
 }
 footer p:first-child {
          border-top: 1px solid #ddd;   
