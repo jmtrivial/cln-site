@@ -18,7 +18,6 @@
              { "type": "separator" },
              { "type" : "page", "txt": "Les associations et soutiens", "title": "Les soutiens aux patients atteints de CLN", "url": "les-soutiens.html" },
              { "type" : "page", "txt": "Références et liens", "title": "Références et liens de lectures", "url": "references.html" },
-             { "type" : "page", "txt": "Livre JNCL (2018)", "title": "Livre JNCL (2018)", "url": "livre-jncl-2018.html" },
              { "type" : "page", "txt": "COVID et CLN", "title": "COVID et CLN", "url": "covid.html" },
              { "type": "separator" },
              { "type" : "page", "txt": "Week-end des familles VML 2019", "title": "Week-end des familles VML 2019", "url": "week-end-familles-vml-2019.html" },
@@ -29,7 +28,9 @@
              ] },
   { "type": "directory", "txt": "Témoignages",
              "content": [
-             { "type" : "page", "txt": "Perte de la parole", "title": "Perte de la parole", "url": "perte-parole.html" }
+             { "type" : "page", "txt": "Perte de la parole", "title": "Perte de la parole", "url": "perte-parole.html" },
+             { "type" : "page", "txt": "Carnet de bord d'un proche aidant", "title": "Podcast proche aidant", "url": "qmpp.html" },
+             { "type" : "page", "txt": "Livre JNCL (2018)", "title": "Livre JNCL (2018)", "url": "livre-jncl-2018.html" }
                ] },
              { "type": "directory", "txt": "La recherche",
              "content": [
