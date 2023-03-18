@@ -10,6 +10,8 @@
              ] },
   { "type": "directory", "txt": "Au quotidien",
              "content": [
+             { "type" : "page", "txt": "Éducation", "title": "Éducation (ivre JNCL, 2018)", "url": "livre-jncl-2018.html" },
+             { "type" : "page", "txt": "Activités physiques", "title": "Activités physiques", "url": "activites-physiques.html" },
              { "type" : "page", "txt": "Activités quotidiennes", "title": "Activités quotidiennes", "url": "activites-quotidiennes.html" },
              { "type" : "page", "txt": "Communication non verbale", "title": "Communication non verbale", "url": "communication-non-verbale.html" },
              { "type" : "page", "txt": "Aides à la communication", "title": "Aides à la communication", "url": "aides-a-la-communication.html" },
@@ -29,8 +31,7 @@
   { "type": "directory", "txt": "Témoignages",
              "content": [
              { "type" : "page", "txt": "Perte de la parole", "title": "Perte de la parole", "url": "perte-parole.html" },
-             { "type" : "page", "txt": "Carnet de bord d'un proche aidant", "title": "Podcast proche aidant", "url": "qmpp.html" },
-             { "type" : "page", "txt": "Livre JNCL (2018)", "title": "Livre JNCL (2018)", "url": "livre-jncl-2018.html" }
+             { "type" : "page", "txt": "Carnet de bord d'un proche aidant", "title": "Podcast proche aidant", "url": "qmpp.html" }
                ] },
              { "type": "directory", "txt": "La recherche",
              "content": [
