@@ -17,6 +17,8 @@
              { "type" : "page", "txt": "Aides à la communication", "title": "Aides à la communication", "url": "aides-a-la-communication.html" },
              { "type" : "page", "txt": "Pictogrammes tactiles", "title": "Pictogrammes tactiles", "url": "pictogrammes-tactiles.html" },
              { "type" : "page", "txt": "Alimentation mixée", "title": "Alimentation mixée", "url": "alimentation-mixee.html" },
+             { "type" : "page", "txt": "Soutien postural", "title": "Soutien postural", "url": "soutien-postural.html" },
+             { "type" : "page", "txt": "Anxiété", "title": "Anxiété", "url": "anxiete.html" },
              { "type" : "page", "txt": "Épilepsie", "title": "Épilepsie", "url": "epilepsie.html" },
              { "type": "separator" },
              { "type" : "page", "txt": "Les associations et soutiens", "title": "Les soutiens aux patients atteints de CLN", "url": "les-soutiens.html" },
