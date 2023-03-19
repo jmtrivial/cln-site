@@ -21,6 +21,8 @@
              { "type" : "page", "txt": "Anxiété", "title": "Anxiété", "url": "anxiete.html" },
              { "type" : "page", "txt": "Épilepsie", "title": "Épilepsie", "url": "epilepsie.html" },
              { "type": "separator" },
+             { "type" : "page", "txt": "Heather House", "title": "Heather House", "url": "heather-house.html" },
+             { "type": "separator" },
              { "type" : "page", "txt": "Les associations et soutiens", "title": "Les soutiens aux patients atteints de CLN", "url": "les-soutiens.html" },
              { "type" : "page", "txt": "Références et liens", "title": "Références et liens de lectures", "url": "references.html" },
              { "type" : "page", "txt": "COVID et CLN", "title": "COVID et CLN", "url": "covid.html" },
