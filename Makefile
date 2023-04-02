@@ -10,7 +10,7 @@ ARCHIVE := $(OBJ_DIR)/archive-cln.zip
 
 all: $(ARCHIVE) $(HTM_FILES)
 	
-html: $(HTM_FILES) dirs
+html: $(HTM_FILES) dirs build/contenus.json
 
 pdf: $(PDF_FILES)
 
@@ -28,10 +28,12 @@ build/css:
 build/docs:
 	if [ ! -L build/docs ]; then ln -s ../docs build/; fi
 
+build/contenus.json: structure.json $(SRC_FILES)
+	./structure-to-content.py $< $@
 
 build/%.html: %.html structure.json
 	if [ ! -d build ]; then mkdir build; fi
-	./make-page.py $^ build/$< 
+	./make-page.py $^ build/$<
 	
 pdf/%.pdf: build/%.html
 	wkhtmltopdf --enable-local-file-access $< $@

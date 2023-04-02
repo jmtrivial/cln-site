@@ -1,0 +1,159 @@
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Maladie de Batten (CLN) — <cln-title /></title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74654906-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-74654906-5');
+    </script>
+    
+  </head>
+
+  <body>
+
+    <cln-menu />
+
+
+    <main role="main" class="container">
+      
+      <div class="starter-template">
+        <h1>Rechercher</h1>
+      </div>
+
+
+     <p>Rechercher dans les pages de ce site.</p>
+
+     <form action="https://duckduckgo.com/" method="get" class="form-inline" id="form-rechercher">
+     <div class="form-group w-100">
+            <input id="url-site" type="hidden" name="sites" value="cln.jmfavreau.info">
+            <div class="form-group mx-sm-3 mb-2">
+              <input id="input-search" type="search" class="form-control" name="q">
+            </div>
+            <input type="submit" class="btn btn-primary mb-2" value="Rechercher">
+    </div>
+        <small id="helpNoJS" class="form-text text-muted"><strong>Remarque&nbsp;:</strong> la recherche sera redirigée sur <a href="https://duckduckgo.com/">DuckDuckGo</a>.
+          <span id="retour-local" display="none">Vous pouvez aussi préférer une <a href="?engine=intern">recherche interne</a>.</span>
+        </small>
+        <small id="helpJS" class="form-text text-muted" style="display: none"><strong>Remarque&nbsp;:</strong> la recherche est réalisée sur toutes les pages du site grâce à <a href="https://fusejs.io/">FuseJS</a>. Vous pouvez aussi préférez une <a href="?engine=extern">recherche externe</a>.</small>
+      </form>
+
+      <div id="resultats" class="mt-4">
+
+      </div>
+    </main>
+
+    <cln-footer />
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- script src="js/fuse.js"></script-->
+    <script src="js/FuzzySearch.min.js"></script>
+    <script>
+
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      $("#retour-local").css("display", "inline");
+      if (urlParams.get('engine') != "extern") {
+        $("#helpNoJS").css("display", "none");
+        $("#helpJS").css("display", "inline");
+        $("#url-site").remove();
+        $("#form-rechercher").attr("action", "");
+        if (urlParams.get('q')) {
+          pattern = urlParams.get('q');
+          $("#input-search").val(pattern);
+
+          // on charge les contenus
+          $.getJSON( "contenus.json", function(pages) {
+
+              // on recherche avec fuse.js
+              /*const options = {
+                // isCaseSensitive: false,
+                // includeScore: false,
+                // shouldSort: true,
+                // includeMatches: true,
+                // findAllMatches: false,
+                // minMatchCharLength: 1,
+                // location: 0,
+                threshold: 0.4,
+                // distance: 100,
+                // useExtendedSearch: false,
+                // ignoreLocation: false,
+                // ignoreFieldNorm: false,
+                // fieldNormWeight: 1,
+                keys: [
+                  "txt",
+                  "title",
+                  "summary",
+                  "content"
+                ]
+              };
+              const fuse = new Fuse(pages, options);
+
+
+              results = fuse.search(pattern);*/
+              var keys = [
+                  "txt",
+                  "title",
+                  "summary",
+                  "content"
+                ];
+              var searcher = new FuzzySearch({source: pages, keys: keys, minimum_match: 3, thresh_include: 7});
+              var results = searcher.search(pattern);
+              console.log(results);
+
+              // on affiche les résultats
+              if (results.length == 0) {
+                $("#resultats").html("<p>Aucune page ne correspond à la recherche <strong>" + pattern + "</strong>.</p>");
+              }
+              else {
+                var text = "<p>";
+                if (results.length == 1)
+                  text += "Une page correspond";
+                else
+                  text += results.length + " pages correspondent";
+                text += " à la recherche <strong>" + pattern + "</strong>&nbsp;:</p>";
+
+                text += "<ul>";
+
+                for (let id in results) {
+                  result = results[id];
+                  text += '<li><a href="' + result["url"] + '">' + result["title"] + '</a><br />';
+                  text += '<span>' + result["summary"] + '</span>';
+                  text += '</li>';
+                }
+
+                text += "</ul>";
+
+                $("#resultats").html(text);
+
+              }
+          });
+        }
+      }
+
+    </script>
+  </body>
+</html>
