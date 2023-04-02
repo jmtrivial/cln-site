@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*
 
 import sys
@@ -118,7 +118,7 @@ def buildFooter(menu, htmlfile):
     return u'<footer class="container"><p>&copy; Jean-Marie Favreau, <a href="http://vml-asso.org">VML</a>, <a href="https://metab.ern-net.eu/">MetabERN</a> — dernière modification ' + datemodif + u'. Vous pouvez télécharger cette page <a href="pdf/' + pdffile + u'">au format pdf</a>.</p><p>Si vous voulez soutenir la recherche et aider l\'association VML qui accompagne les familles touchées par les maladies de Batten, envisagez de <a href="https://www.vml-asso.org/spip.php?page=don">faire un don</a>.</footer>'
 
 if len(sys.argv) != 4:
-  print "Erreur de paramètres"
+  print("Erreur de paramètres")
   exit(1)
 
 
