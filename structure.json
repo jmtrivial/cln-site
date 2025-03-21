@@ -50,6 +50,7 @@
              { "type": "separator" },
              { "type" : "page", "txt": "Troubles du comportement", "title": "Troubles du comportement avant le diagnostic CLN", "url": "trouble-comportement.html" },
              { "type": "separator" },
+             { "type" : "page", "txt": "Financement BDGRI 2025", "title": "Financement BDGRI 2025", "url": "bdgri-2025.html" },
              { "type" : "page", "txt": "NCL 2023, Hambourg", "title": "NCL 2023, Hambourg", "url": "ncl-2023.html" },
              { "type" : "page", "txt": "NCL 2018, London", "title": "NCL 2018, London", "url": "ncl-2018.html" },
              { "type" : "page", "txt": "NCL 2018, London (détails)", "title": "NCL 2018, London (détails)", "url": "ncl-2018-details.html" }
