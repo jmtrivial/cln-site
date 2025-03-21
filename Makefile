@@ -36,7 +36,7 @@ build/%.html: %.html structure.json
 	./make-page.py $^ build/$<
 	
 pdf/%.pdf: build/%.html
-	wkhtmltopdf --enable-local-file-access $< $@
+	chromium --headless --disable-gpu --print-to-pdf=$@ $<
 
 $(ARCHIVE): $(PDF_FILES) $(DOC_FILES)
 	zip $@ $(PDF_FILES) $(DOC_FILES)

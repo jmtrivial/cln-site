@@ -299,3 +299,8 @@ footer p:first-child {
 }
 
 
+@media print {
+    body>nav {
+        display: none !important;
+    }
+}
