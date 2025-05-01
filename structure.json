@@ -44,6 +44,7 @@
              { "type" : "page", "txt": "Les traitements envisagés", "title": "Les traitements envisagés", "url": "traitements-envisages.html" },
              { "type": "separator" },
              { "type" : "page", "txt": "Actualités des essais cliniques", "title": "Les actualités des essais cliniques", "url": "essais-cliniques.html" },
+             { "type" : "page", "txt": "Annonce essai clinique CLN-301", "title": "Annonce essai clinique CLN-301", "url": "essai-clinique-cln3-2025.html" },
              { "type": "separator" },
              { "type" : "page", "txt": "La recherche pré-clinique", "title": "La recherche pré-clinique", "url": "recherche-preclinique.html" },
              { "type" : "page", "txt": "Actualités de la recherche pré-clinique", "title": "Les actualités de la recherche pré-clinique", "url": "actualites-recherche.html" },
